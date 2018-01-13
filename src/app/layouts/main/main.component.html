@@ -1,0 +1,15 @@
+
+<router-outlet name="navbar"></router-outlet>
+
+
+<mat-sidenav-container class="example-container" color="primary">
+    
+    <mat-sidenav mode="side" [(opened)]="isSidebarOpen" class="example-sidenav">
+        <router-outlet name="sidebar" class="sidebar"></router-outlet>
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+  
+</mat-sidenav-container>

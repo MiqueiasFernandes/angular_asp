@@ -1,0 +1,31 @@
+<mat-toolbar class="mat-elevation-z6 example-header" color="primary">
+  <img src="assets/images/ico.png" height="50" (click)="toogleSidebar()">
+  <!--
+    <mat-icon (click)="toogleSidebar()">menu</mat-icon> -->
+  <div class="title">DREvolution</div>
+  <mat-chip-list class="margin-left-10">
+    <mat-chip  [matMenuTriggerFor]="sistema"> HOTEL</mat-chip>
+  </mat-chip-list>
+
+
+  <mat-menu #sistema="matMenu">
+    <a mat-menu-item  href="http://www.drevolut.com" >DREvolution</a>
+    <button mat-menu-item [matMenuTriggerFor]="drevolutionhotel">DREvolution - Hotel</button>
+    <button mat-menu-item [matMenuTriggerFor]="drevolutionrestaurante">DREvolution - Restaurante</button>
+  </mat-menu>
+
+  <mat-menu #drevolutionhotel="matMenu">
+    <a mat-menu-item href="http://www.backoffice.hotel.drevolut.com">BackOffice</a>
+    <a mat-menu-item href="http://www.hotel.drevolut.com">FrontOffice</a>
+  </mat-menu>
+
+  <mat-menu #drevolutionrestaurante="matMenu">
+    <a mat-menu-item href="http://www.backoffice.restaurante.drevolut.com">BackOffice</a>
+    <a mat-menu-item href="http://www.restaurante.drevolut.com">FrontOffice</a>
+  </mat-menu>
+
+
+  <!-- This fills the remaining space of the current row -->
+  <span class="example-fill-remaining-space"></span>
+  <button mat-button (click)="login()">Login</button>
+</mat-toolbar>

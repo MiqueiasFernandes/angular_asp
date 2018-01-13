@@ -1,0 +1,64 @@
+<mat-card>
+    <h1 class="mat-display-1">Registrar novo usuário</h1>
+    <hr>
+    <mat-progress-bar mode="indeterminate" color="accent"  ></mat-progress-bar>
+        
+
+
+    <div class="example-container">
+        <mat-form-field>
+            <input matInput type="text" tabindex="1" [(ngModel)]="user.FirstName" placeholder="Nome" required>
+            <mat-error *ngIf="_error.FirstName">{{_error.FirstName[0]}}</mat-error>
+        </mat-form-field>
+
+        <mat-form-field>
+            <input matInput type="text" [(ngModel)]="user.LastName" placeholder="Sobrenome">
+            <mat-error *ngIf="_error.LastName">{{_error.LastName[0]}}</mat-error>
+        </mat-form-field>
+
+        <mat-form-field>
+            <input matInput type="text" [(ngModel)]="user.UserName" placeholder="Usuario" required>
+            <mat-error *ngIf="_error.UserName">{{_error.UserName[0]}}</mat-error>
+        </mat-form-field>
+
+        <mat-form-field>
+            <input matInput type="email" [(ngModel)]="user.Email" placeholder="Email" required>
+            <mat-error *ngIf="_error.Email">{{_error.Email[0]}}</mat-error>
+        </mat-form-field>
+
+       
+     
+         <input-file (onFileSelect)="onFileSelect($event)" [accept]="'image/*'">
+                <span class="nofiles">Choose file</span>
+                <span class="selected">Files selected</span>
+         </input-file>
+        
+
+        <mat-form-field>
+            <input matInput type="password" [(ngModel)]="user.Password" placeholder="Senha" required>
+            <mat-error *ngIf="_error.Password || _error.PasswordTooShort">{{_error.Password ? _error.Password[0] : _error.PasswordTooShort[0]}}</mat-error>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput type="password" [(ngModel)]="password" placeholder="Confirmação de senha" required>
+            <mat-error *ngIf="_error.Password || _error.PasswordTooShort">{{_error.Password ? _error.Password[0] : _error.PasswordTooShort[0]}}</mat-error>
+        </mat-form-field>
+
+    </div>
+
+    <div class="buttons">
+
+    <button mat-raised-button color="warn" >
+        <mat-icon>clear</mat-icon>Limpar
+    </button>
+
+    <button mat-raised-button color="warn" [routerLink]="['/usuarios']" class="margin-left-10">
+        <mat-icon>undo</mat-icon>Cancelar
+    </button>
+
+    <button mat-raised-button color="primary" class="margin-left-10">
+        <mat-icon>save</mat-icon>Salvar
+    </button>
+
+</div>
+
+</mat-card>

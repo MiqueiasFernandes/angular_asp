@@ -1,0 +1,11 @@
+C:\drevolution\backendhotel\bin\Any CPU\Release\netcoreapp2.0\backendhotel.deps.json
+C:\drevolution\backendhotel\bin\Any CPU\Release\netcoreapp2.0\backendhotel.runtimeconfig.json
+C:\drevolution\backendhotel\bin\Any CPU\Release\netcoreapp2.0\backendhotel.runtimeconfig.dev.json
+C:\drevolution\backendhotel\bin\Any CPU\Release\netcoreapp2.0\backendhotel.dll
+C:\drevolution\backendhotel\bin\Any CPU\Release\netcoreapp2.0\backendhotel.pdb
+C:\drevolution\backendhotel\obj\Any CPU\Release\netcoreapp2.0\backendhotel.csprojResolveAssemblyReference.cache
+C:\drevolution\backendhotel\obj\Any CPU\Release\netcoreapp2.0\backendhotel.csproj.CoreCompileInputs.cache
+C:\drevolution\backendhotel\obj\Any CPU\Release\netcoreapp2.0\backendhotel.AssemblyInfoInputs.cache
+C:\drevolution\backendhotel\obj\Any CPU\Release\netcoreapp2.0\backendhotel.AssemblyInfo.cs
+C:\drevolution\backendhotel\obj\Any CPU\Release\netcoreapp2.0\backendhotel.dll
+C:\drevolution\backendhotel\obj\Any CPU\Release\netcoreapp2.0\backendhotel.pdb

@@ -1,0 +1,120 @@
+<div class="user-info">
+    <div class="image">
+        <img [src]="foto" width="48" height="48" alt="User">
+    </div>
+
+<section class="mat-typography">
+ 
+
+
+    <div class="info-container">
+        <div class="name mat-list-text">
+               Miquéias Fernandes
+               
+        </div>
+        <div class="email">
+              contato@hotmail.com
+        </div>
+        <div class="fixSidebar">
+                <button mat-mini-fab color="primary" [routerLink]="['/settings']"><mat-icon>settings</mat-icon></button>
+        </div>
+    </div>
+</section>
+</div>
+
+
+<mat-divider></mat-divider>
+
+
+<!--<mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Usuarios
+          </mat-panel-title>
+        
+        </mat-expansion-panel-header>
+      
+      
+        <mat-nav-list>
+            
+            
+                <mat-list-item>
+                    <a matLine href="...">link.name</a>
+                    <button mat-icon-button>
+                        <mat-icon>info</mat-icon>
+                    </button>
+                </mat-list-item>
+                <mat-list-item>
+                    <a matLine href="...">link.name</a>
+                    <button mat-icon-button>
+                        <mat-icon>info</mat-icon>
+                    </button>
+                </mat-list-item>
+                <mat-list-item>
+                    <a matLine href="...">link.name</a>
+                    <button mat-icon-button>
+                        <mat-icon>info</mat-icon>
+                    </button>
+                </mat-list-item>
+            
+            
+            
+                <mat-divider></mat-divider>
+                <h3 matSubheader>Notes</h3>
+            
+            
+                <mat-list-item *ngFor="let link of links">
+                    <a matLine href="...">{{ link.name }}</a>
+                    <button mat-icon-button (click)="showInfo(link)">
+                        <mat-icon>info</mat-icon>
+                    </button>
+                </mat-list-item> 
+            
+            
+            
+            </mat-nav-list>
+
+
+      
+      </mat-expansion-panel>-->
+
+
+<mat-nav-list>
+    <h3 matSubheader>Menu</h3>
+
+
+    <mat-list-item [routerLink]="['/usuarios']" routerLinkActive="active">
+        <a matLine >Usuarios</a>
+        <button mat-icon-button>
+            <mat-icon>supervisor_account</mat-icon>
+        </button>
+    </mat-list-item>
+    <mat-list-item>
+        <a matLine href="...">link.name</a>
+        <button mat-icon-button>
+            <mat-icon>info</mat-icon>
+        </button>
+    </mat-list-item>
+    <mat-list-item>
+        <a matLine href="...">link.name</a>
+        <button mat-icon-button>
+            <mat-icon>info</mat-icon>
+        </button>
+    </mat-list-item>
+
+
+
+    <!-- <mat-divider></mat-divider>
+    <h3 matSubheader>Notes</h3>
+
+
+    <mat-list-item *ngFor="let link of links">
+        <a matLine href="...">{{ link.name }}</a>
+        <button mat-icon-button (click)="showInfo(link)">
+            <mat-icon>info</mat-icon>
+        </button>
+    </mat-list-item> -->
+
+
+
+</mat-nav-list>
